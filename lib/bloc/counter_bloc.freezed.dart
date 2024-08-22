@@ -18,40 +18,39 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$CounterEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function(int value) addOrSubstractValue,
+    required TResult Function() addValue,
+    required TResult Function() substractValue,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
-    TResult? Function(int value)? addOrSubstractValue,
+    TResult? Function()? addValue,
+    TResult? Function()? substractValue,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(int value)? addOrSubstractValue,
+    TResult Function()? addValue,
+    TResult Function()? substractValue,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(_AddOrSubstractValueEvent value)
-        addOrSubstractValue,
+    required TResult Function(_AddValueEvent value) addValue,
+    required TResult Function(_SubstractValueEvent value) substractValue,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
-    TResult? Function(_AddOrSubstractValueEvent value)? addOrSubstractValue,
+    TResult? Function(_AddValueEvent value)? addValue,
+    TResult? Function(_SubstractValueEvent value)? substractValue,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_AddOrSubstractValueEvent value)? addOrSubstractValue,
+    TResult Function(_AddValueEvent value)? addValue,
+    TResult Function(_SubstractValueEvent value)? substractValue,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -76,35 +75,35 @@ class _$CounterEventCopyWithImpl<$Res, $Val extends CounterEvent>
 }
 
 /// @nodoc
-abstract class _$$StartedImplCopyWith<$Res> {
-  factory _$$StartedImplCopyWith(
-          _$StartedImpl value, $Res Function(_$StartedImpl) then) =
-      __$$StartedImplCopyWithImpl<$Res>;
+abstract class _$$AddValueEventImplCopyWith<$Res> {
+  factory _$$AddValueEventImplCopyWith(
+          _$AddValueEventImpl value, $Res Function(_$AddValueEventImpl) then) =
+      __$$AddValueEventImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$StartedImplCopyWithImpl<$Res>
-    extends _$CounterEventCopyWithImpl<$Res, _$StartedImpl>
-    implements _$$StartedImplCopyWith<$Res> {
-  __$$StartedImplCopyWithImpl(
-      _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
+class __$$AddValueEventImplCopyWithImpl<$Res>
+    extends _$CounterEventCopyWithImpl<$Res, _$AddValueEventImpl>
+    implements _$$AddValueEventImplCopyWith<$Res> {
+  __$$AddValueEventImplCopyWithImpl(
+      _$AddValueEventImpl _value, $Res Function(_$AddValueEventImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$StartedImpl implements _Started {
-  const _$StartedImpl();
+class _$AddValueEventImpl implements _AddValueEvent {
+  const _$AddValueEventImpl();
 
   @override
   String toString() {
-    return 'CounterEvent.started()';
+    return 'CounterEvent.addValue()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$StartedImpl);
+        (other.runtimeType == runtimeType && other is _$AddValueEventImpl);
   }
 
   @override
@@ -113,30 +112,30 @@ class _$StartedImpl implements _Started {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function(int value) addOrSubstractValue,
+    required TResult Function() addValue,
+    required TResult Function() substractValue,
   }) {
-    return started();
+    return addValue();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
-    TResult? Function(int value)? addOrSubstractValue,
+    TResult? Function()? addValue,
+    TResult? Function()? substractValue,
   }) {
-    return started?.call();
+    return addValue?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(int value)? addOrSubstractValue,
+    TResult Function()? addValue,
+    TResult Function()? substractValue,
     required TResult orElse(),
   }) {
-    if (started != null) {
-      return started();
+    if (addValue != null) {
+      return addValue();
     }
     return orElse();
   }
@@ -144,131 +143,102 @@ class _$StartedImpl implements _Started {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(_AddOrSubstractValueEvent value)
-        addOrSubstractValue,
+    required TResult Function(_AddValueEvent value) addValue,
+    required TResult Function(_SubstractValueEvent value) substractValue,
   }) {
-    return started(this);
+    return addValue(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
-    TResult? Function(_AddOrSubstractValueEvent value)? addOrSubstractValue,
+    TResult? Function(_AddValueEvent value)? addValue,
+    TResult? Function(_SubstractValueEvent value)? substractValue,
   }) {
-    return started?.call(this);
+    return addValue?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_AddOrSubstractValueEvent value)? addOrSubstractValue,
+    TResult Function(_AddValueEvent value)? addValue,
+    TResult Function(_SubstractValueEvent value)? substractValue,
     required TResult orElse(),
   }) {
-    if (started != null) {
-      return started(this);
+    if (addValue != null) {
+      return addValue(this);
     }
     return orElse();
   }
 }
 
-abstract class _Started implements CounterEvent {
-  const factory _Started() = _$StartedImpl;
+abstract class _AddValueEvent implements CounterEvent {
+  const factory _AddValueEvent() = _$AddValueEventImpl;
 }
 
 /// @nodoc
-abstract class _$$AddOrSubstractValueEventImplCopyWith<$Res> {
-  factory _$$AddOrSubstractValueEventImplCopyWith(
-          _$AddOrSubstractValueEventImpl value,
-          $Res Function(_$AddOrSubstractValueEventImpl) then) =
-      __$$AddOrSubstractValueEventImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({int value});
+abstract class _$$SubstractValueEventImplCopyWith<$Res> {
+  factory _$$SubstractValueEventImplCopyWith(_$SubstractValueEventImpl value,
+          $Res Function(_$SubstractValueEventImpl) then) =
+      __$$SubstractValueEventImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$AddOrSubstractValueEventImplCopyWithImpl<$Res>
-    extends _$CounterEventCopyWithImpl<$Res, _$AddOrSubstractValueEventImpl>
-    implements _$$AddOrSubstractValueEventImplCopyWith<$Res> {
-  __$$AddOrSubstractValueEventImplCopyWithImpl(
-      _$AddOrSubstractValueEventImpl _value,
-      $Res Function(_$AddOrSubstractValueEventImpl) _then)
+class __$$SubstractValueEventImplCopyWithImpl<$Res>
+    extends _$CounterEventCopyWithImpl<$Res, _$SubstractValueEventImpl>
+    implements _$$SubstractValueEventImplCopyWith<$Res> {
+  __$$SubstractValueEventImplCopyWithImpl(_$SubstractValueEventImpl _value,
+      $Res Function(_$SubstractValueEventImpl) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? value = null,
-  }) {
-    return _then(_$AddOrSubstractValueEventImpl(
-      value: null == value
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
 }
 
 /// @nodoc
 
-class _$AddOrSubstractValueEventImpl implements _AddOrSubstractValueEvent {
-  const _$AddOrSubstractValueEventImpl({required this.value});
-
-  @override
-  final int value;
+class _$SubstractValueEventImpl implements _SubstractValueEvent {
+  const _$SubstractValueEventImpl();
 
   @override
   String toString() {
-    return 'CounterEvent.addOrSubstractValue(value: $value)';
+    return 'CounterEvent.substractValue()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AddOrSubstractValueEventImpl &&
-            (identical(other.value, value) || other.value == value));
+            other is _$SubstractValueEventImpl);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, value);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AddOrSubstractValueEventImplCopyWith<_$AddOrSubstractValueEventImpl>
-      get copyWith => __$$AddOrSubstractValueEventImplCopyWithImpl<
-          _$AddOrSubstractValueEventImpl>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function(int value) addOrSubstractValue,
+    required TResult Function() addValue,
+    required TResult Function() substractValue,
   }) {
-    return addOrSubstractValue(value);
+    return substractValue();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
-    TResult? Function(int value)? addOrSubstractValue,
+    TResult? Function()? addValue,
+    TResult? Function()? substractValue,
   }) {
-    return addOrSubstractValue?.call(value);
+    return substractValue?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(int value)? addOrSubstractValue,
+    TResult Function()? addValue,
+    TResult Function()? substractValue,
     required TResult orElse(),
   }) {
-    if (addOrSubstractValue != null) {
-      return addOrSubstractValue(value);
+    if (substractValue != null) {
+      return substractValue();
     }
     return orElse();
   }
@@ -276,44 +246,37 @@ class _$AddOrSubstractValueEventImpl implements _AddOrSubstractValueEvent {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(_AddOrSubstractValueEvent value)
-        addOrSubstractValue,
+    required TResult Function(_AddValueEvent value) addValue,
+    required TResult Function(_SubstractValueEvent value) substractValue,
   }) {
-    return addOrSubstractValue(this);
+    return substractValue(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
-    TResult? Function(_AddOrSubstractValueEvent value)? addOrSubstractValue,
+    TResult? Function(_AddValueEvent value)? addValue,
+    TResult? Function(_SubstractValueEvent value)? substractValue,
   }) {
-    return addOrSubstractValue?.call(this);
+    return substractValue?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_AddOrSubstractValueEvent value)? addOrSubstractValue,
+    TResult Function(_AddValueEvent value)? addValue,
+    TResult Function(_SubstractValueEvent value)? substractValue,
     required TResult orElse(),
   }) {
-    if (addOrSubstractValue != null) {
-      return addOrSubstractValue(this);
+    if (substractValue != null) {
+      return substractValue(this);
     }
     return orElse();
   }
 }
 
-abstract class _AddOrSubstractValueEvent implements CounterEvent {
-  const factory _AddOrSubstractValueEvent({required final int value}) =
-      _$AddOrSubstractValueEventImpl;
-
-  int get value;
-  @JsonKey(ignore: true)
-  _$$AddOrSubstractValueEventImplCopyWith<_$AddOrSubstractValueEventImpl>
-      get copyWith => throw _privateConstructorUsedError;
+abstract class _SubstractValueEvent implements CounterEvent {
+  const factory _SubstractValueEvent() = _$SubstractValueEventImpl;
 }
 
 /// @nodoc
