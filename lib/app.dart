@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
-void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,7 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      title: 'Ejemplo Flutter_bloc con freezed',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
       home: Scaffold(
@@ -20,6 +17,7 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Center(
+              // Contador
               child: Text(
                 '0',
                 style: TextStyle(fontSize: 44),
@@ -47,7 +45,7 @@ class MyApp extends StatelessWidget {
                       onPressed: () {
                         // Aquí llamaremos a la función del BloC
                       },
-                      child: const Icon(Icons.delete),
+                      child: const Icon(Icons.remove),
                     ),
                   ),
                 ),
